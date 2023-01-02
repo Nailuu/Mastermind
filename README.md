@@ -1,5 +1,7 @@
 # Mastermind
 
+Preview: https://nailuu.github.io/Mastermind/
+
 - 📱 Fully Responsive
 - 🟨 Pure Vanilla JS
 - 💯 Score Display
