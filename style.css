@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    margin: 1em;
+    font-size: 2.5em;
+}
+
+.row {
+    border-radius: 15px;
+    background-color: #adb5bd;
+    margin-bottom: 0.5em;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.clue-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 6em;
+    height: 6em;
+    background-color: #6c757d;
+    border-radius: 15px;
+}
+
+.clue-cell {
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-cell {
+    height: 6em;
+    width: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.select {
+    padding: 0.5em;
+    background-color: #adb5bd;
+}
+
+.selector-menu, .result {
+    margin-bottom: 1.5em;
+}
+
+.selector-menu {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+#try-btn, button {
+    padding: 0.5em 2em;
+    background-color: #6c757d;
+    color: white;
+}
+
+#try-btn, .select {
+    height: 40px;
+}
+
+#try-btn, .select, button {
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
+    transition: 0.5s all;
+}
+
+#try-btn:hover, button:hover {
+    background-color: #495057;
+}
+
+.select:hover {
+    background-color: #6c757d;
+}
+
+.row-color {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s all;
+}
+
+.clue-color {
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s all;
+}
+
+.row-color:hover, .clue-color:hover {
+    transform: scale(1.1);
+}
+
+#win {
+    font-size: 3em;
+    color: rgb(112, 224, 0);
+    font-weight: 800;
+}
+
+#lose {
+    font-size: 3em;
+    color: rgb(239, 35, 60);
+    font-weight: 800;
+}
+
+#reason {
+    color: rgb(239, 35, 60);
+}
+
+#score {
+    color: rgb(112, 224, 0);
+}
+
+#lose, #win {
+    height: 1.25em;
+}
+
+.git-link {
+    text-decoration: none;
+    color: purple;
+}
+
+.git-link:hover, .git-link:focus {
+    color: orange;
+    text-decoration: underline;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.75em 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.25em;
+    background-color: #efefef;
+}
+
+.score {
+    margin-bottom: 4.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 576px) {
+    .row-cell {
+        height: 4em;
+        width: 4em;
+    }
+
+    .clue-cell {
+        width: 2em;
+        height: 2em;
+    }
+
+    .clue-grid {
+        justify-content: space-evenly;
+        align-items: center;
+        width: 5em;
+        height: 5em;
+    }
+
+    .row-color {
+        width: 3em;
+        height: 3em;
+    }
+
+    .row {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .selector-menu {
+        display: flex;
+        flex-wrap: wrap;
+        width: 336px;
+        justify-content: center;
+        gap: 0.25em;
+    }
+
+    .select {
+        width: 49%;
+    }
+
+    #try-btn {
+        margin-top: 0.25em;
+        width: 100%;
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+}
